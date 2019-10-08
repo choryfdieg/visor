@@ -6,7 +6,7 @@
 
     <h1> {{ __('Contact') }} </h1>
  
-    <form method="POST" action="{{ route('contact') }}">
+    <form method="POST" action="{{ route('contact.store') }}">
 
         @csrf
         

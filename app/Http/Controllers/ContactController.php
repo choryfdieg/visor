@@ -20,7 +20,7 @@ class ContactController extends Controller
 
         Mail::to('choryfdieg@gmail.com')->queue(new MessageReceived($msg));
 
-        return view('contact');
+        return back()->with('status', 'Recibimos tu mensaje');
     }
 
 }
